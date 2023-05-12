@@ -3,6 +3,18 @@ import time
 import easygui
 import random
 
+'''
+This is Simple genatic algorithm to solve n-queens problem 
+"N-queen problem" is N*N chess board you want to put N queens on it but no Queen attack another 
+so we use chromosome legthn = N (user input) and each gene is represent colum cell in each row (row = index(gene))
+fitness funcation here is number of non attacking pair of queens (max fitness =n*(n-1)/2)
+crossover used is  uniform crossover
+mutation is change random gene to new random value 
+perant selection we use roulette wheal selection 
+GUI is cerated used Graphics lib
+
+devolped with all love by Ziad Helay 
+'''
 #Gui funcations
 def Board(n): #chess GUI
     global win
@@ -197,4 +209,4 @@ if __name__ == "__main__":
         except:
             print("End!!")
 
-#Devolped by Ziad Helaly
+#Devolped by Ziad Helaly 
